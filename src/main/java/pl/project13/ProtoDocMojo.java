@@ -14,15 +14,15 @@ import pl.project13.protodoc.runner.ProtoDocMain;
  * @requiresProject
  * @since 1.0
  */
-@SuppressWarnings({"JavaDoc"})
+@SuppressWarnings({"JavaDoc", "UnusedDeclaration"})
 public class ProtoDocMojo extends AbstractMojo {
+
     /**
      * The maven project.
      *
      * @parameter expression="${project}"
      * @readonly
      */
-    //@VisibleForTesting
     MavenProject project;
 
 

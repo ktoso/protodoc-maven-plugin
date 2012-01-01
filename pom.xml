@@ -93,20 +93,22 @@
 
     <build>
         <plugins>
-            <!--<plugin>-->
-                <!--<groupId>pl.project13.maven</groupId>-->
-                <!--<artifactId>protodoc-maven-plugin</artifactId>-->
-                <!--<version>1.0</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<goals>package</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-                <!--<configuration>-->
-                    <!--<protoDir>${project.basedir}/src/main/proto</protoDir>-->
-                    <!--<outDir>${project.basedir}/target/protodoc</outDir>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>protodoc-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <protoDir>${project.basedir}/src/main/proto</protoDir>
+                    <outDir>${project.basedir}/target/protodoc</outDir>
+                </configuration>
+            </plugin>
 
             <!-- Setting built-in java compiler properties -->
             <plugin>
