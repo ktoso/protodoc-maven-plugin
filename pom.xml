@@ -107,6 +107,7 @@
                 <configuration>
                     <protoDir>${project.basedir}/src/main/proto</protoDir>
                     <outDir>${project.basedir}/target/protodoc</outDir>
+                    <verbose>false</verbose>
                 </configuration>
             </plugin>
 
